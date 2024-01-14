@@ -6,6 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // eslint-disable-next-line prettier/prettier
   plugins: [
     vue(),
     vueJsx(),
