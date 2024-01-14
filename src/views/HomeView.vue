@@ -16,7 +16,7 @@ watch(count, (value, oldValue) => {
 <template>
   <main>
     <h1>HomeView</h1>
-    <button @click="increment">count is {{ count }}</button>
-    <button>doubleCount is {{ doubleCount }}</button>
+    <el-button @click="increment">count is {{ count }}</el-button>
+    <el-button type="info">doubleCount is {{ doubleCount }}</el-button>
   </main>
 </template>
