@@ -1,7 +1,8 @@
 <script setup>
-import { watch } from 'vue'
+import { watch, onMounted } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useCounterStore } from '@/stores/counter'
+import { requestData } from '@/service/login/login'
 
 const counterStore = useCounterStore()
 
@@ -10,6 +11,11 @@ const { increment } = counterStore
 
 watch(count, (value, oldValue) => {
   console.log(value, oldValue)
+})
+
+onMounted(() => {
+  console.log('requestData')
+  requestData()
 })
 </script>
 
